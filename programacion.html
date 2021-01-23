@@ -1,0 +1,1324 @@
+<!DOCTYPE html>
+<html lang en>
+<head>
+	<title>Actividad 04 - DAR - UNIR - Programación UNIR-DAR</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="js/bootstrap.js"></script>
+</head>
+
+<!--////////////////////////////////BLOQUE INICIO////////////////////////////////////////-->
+
+<body style="background-color:#f3f3f3;">
+	<br>
+	<div id="barraInicialLogo" class="container-fluid">	
+		<div class="row">
+			<div id="inicialIzq"class="col-sm-3" style="background-color:transparent;"></div>
+			<div id="inicialCentrado" class="col-sm-6" style="background-color: transparent;">
+				<center><img src="images/unir2.png"></center>
+			</div>
+			<div class="col-sm-3" style="background-color:transparent;"></div>
+		</div>
+	</div>
+	<br>
+	<div id="barraInicialTexto" class="container-fluid">	
+		<div class="row">
+			<div id="inicialIzq"class="col-sm-3" style="background-color:transparent;"></div>
+			<div id="inicialCentrado" class="col-sm-6" style="background-color: #6fc0de;">
+				<h4 style="color: white" class="text-center bold"><strong>Actividad 04: Sitio Web basado en Componentes</strong></h4>
+				<h5 style="color: white" class="text-center bold"><strong>Alumno: José Antonio Gil Valencia</strong></h5>
+			</div>
+			<div class="col-sm-3" style="background-color:transparent;"></div>
+		</div>
+	</div>
+	<div id="barraInicialSubTexto" class="container-fluid">	
+		<div class="row">
+			<div id="inicialIzq"class="col-sm-3" style="background-color:transparent;"></div>
+			<div id="inicialCentrado" class="col-sm-6" style="background-color: #ffffff;">
+				<h4 style="color: #6fc0de" class="text-center bold"><strong>GRADO EN INGENIERÍA INFORMÁTICA</strong></h4>
+				<h5 style="color: #6fc0de" class="text-center bold"><strong>Desarrollo de Aplicaciones en Red</strong></h5>
+			</div>
+			<div class="col-sm-3" style="background-color:transparent;"></div>
+		</div>
+	</div>
+	<div id="barraInicialMenu" class="container-fluid">	
+		<div class="row">
+			<div id="inicialIzq"class="col-sm-3" style="background-color:transparent;"></div>
+			<div id="inicialCentrado" class="col-sm-6" style="background-color: #d0e5ec;">
+				<br>
+				<div id="subTabla01"class="col-sm-4" style="background-color:transparent;">
+					<center>
+						<center><a href="index.html" class="btn btn-info">Menú Principal</a></center>
+					</center>
+				</div>
+				<div id="subTabla02"class="col-sm-4" style="background-color:transparent;">
+					<center>
+						<center><a href="bootstrap.html#bootstrap" class="btn btn-info">Acerca de <i>Bootstrap</i></a></center>
+					</center>
+				</div>
+				<div id="subTabla03"class="col-sm-4" style="background-color:transparent;">
+					<center>
+					<div class="dropdown">
+						<button class="btn btn-info btn-justified dropdown-toggle" type="button" id="dropdownmenu1" data-toggle="dropdown" aria-extended="true">
+							Entregables
+							<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="dropdownmenu1">
+							<li role="presentation" class="dropdown-header">Archivos actividad</li>
+							<li class="divider"></li>
+							<li role="presentation"><a role="item" href="archives/memoria.pdf">Memoria PDF</a></li>
+							<li role="presentation"><a role="item" href="archives/proyecto.zip">Proyecto Web</a></li>
+							<li class="divider"></li>
+							<li role="presentation"><a role="item" href="https://github.com/gilvalencia/DAR_act03">Proyecto GitHub</a></li>
+						</ul>
+					</div></center>
+					<br>
+				</div>
+			</div>
+			<div class="col-sm-3" style="background-color:transparent;"></div>
+		</div>
+	</div>
+	<br>
+
+<!--////////////////////////////////PROGRAMACION BLOQUE SUPERIOR////////////////////////////////////////-->
+
+	<div id="programacion" class="container-fluid">	
+		<div id="programacionTitulo" class="row">
+			<div id="inicialCentrado" class="col-sm-12" style="background-color: #6fc0de;">
+				<h3 style="color: white" class="text-left bold"><strong>Programación Asignatura "Desarrollo de Aplicaciones en Red" CURSO 2020-2021</i></strong></h3>
+			</div>
+		</div>
+		<div id="programacionDefinicionTitulo" class="row">
+			<div id="inicialCentrado" class="col-sm-12" style="background-color: #d0e5ec;">
+				<h5 style="color: #40a2c6;" class="text-left bold"><strong>GRADO EN INGENIERÍA INFORMÁTICA - Universidad Internacional de La Rioja</strong></h5>
+			</div>
+		</div>
+		<div id="programacionDefinicionContenido" class="row">
+			<div id="inicialCentrado" class="col-sm-12" style="background-color: white;">
+			<br>
+				<p style="color: #505050; text-indent: 2em; line-height: 200%" class="text-left bold">Para conocer la fecha de entrega de las distintas actividades accede a la sección <b>Actividades</b>. Recuerda que la suma de las puntuaciones de todas las actividades es de 15 puntos. Puedes hacer las que prefieras hasta conseguir un máximo de 10 puntos (que es la calificación máxima que se puede obtener en la evaluación continua).</p>
+				<dl class="dl-horizontal">
+					<dt>Actividades</dt>
+					<dd>6.0 puntos</dd>
+					<dt>Eventos</dt>
+					<dd>1.6 puntos</dd>
+					<dt>Asistencia a clase</dt>
+					<dd>0.6 puntos (máximo dos asistencias)</dd>
+					<dt>Laboratorios</dt>
+					<dd>6.0 puntos</dd>
+				</dl>
+				<blockquote>
+					<small>Departamento de Recursos Académicos -<cite title="Nombre Apellidos"> Universidad Internacional de La Rioja</cite></small>
+				</blockquote>
+			</div>
+		</div>
+		<br>
+
+<!--////////////////////////////////PROGRAMACION SEMANAL////////////////////////////////////////-->
+
+		<div id="programacionCalendario" class="row">
+			<div id="inicialCentrado" class="col-sm-12" style="background-color: #6fc0de;">
+				<h3 style="color: white" class="text-center bold"><strong>PROGRAMACIÓN SEMANAL</strong></h3>
+			</div>
+			<div id="inicialCentrado" class="col-sm-12" style="background-color: #6fc0de;">
+				<div id="inicialCentrado" class="col-sm-3" style="background-color: transparent;"></div>
+				<div id="mensual" class="col-sm-2" style="background-color: transparent;">
+					<div id="mensual" class="dropdown">
+						<button class="btn btn-default btn-justified dropdown-toggle" type="button" id="dropdownmenu1" data-toggle="dropdown" aria-extended="true">
+							Acceso mensual
+							<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu dropdown-menu-center" role="menu" aria-labelledby="dropdownmenu1">
+							<li role="presentation"><a role="item" href="#octubre">Octubre</a></li>
+							<li role="presentation"><a role="item" href="#noviembre">Noviembre</a></li>
+							<li role="presentation"><a role="item" href="#diciembre">Diciembre</a></li>
+							<li role="presentation"><a role="item" href="#enero">Enero</a></li>
+							<li role="presentation"><a role="item" href="#febrero">Febrero</a></li>
+						</ul>
+					</div>
+				</div>
+				<div id="semanal" class="col-sm-2" style="background-color: transparent;">
+					<div id="semanal" class="dropdown">
+						<button class="btn btn-default btn-justified dropdown-toggle" type="button" id="dropdownmenu1" data-toggle="dropdown" aria-extended="true">
+							Acceso semanal
+							<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu dropdown-menu-center" role="menu" aria-labelledby="dropdownmenu1">
+							<li role="presentation"><a role="item" href="#semana1">Semanas 1-2</a></li>
+							<li role="presentation"><a role="item" href="#semana3">Semanas 3-6</a></li>
+							<li role="presentation"><a role="item" href="#semana8">Semanas 8-9</a></li>
+							<li role="presentation"><a role="item" href="#semana10">Semanas 10-13</a></li>
+							<li role="presentation"><a role="item" href="#semana14">Semanas 14-16</a></li>
+						</ul>
+					</div>
+				</div>
+				<div id="descargar" class="col-sm-2" style="background-color: transparent;">
+					<a href="archives/ProgramacionDAR_2020_2021.pdf" class="btn btn-default">Descargar Programación</a>
+				</div>
+				<div id="inicialCentrado" class="col-sm-3" style="background-color: transparent;"></div>
+			</div>
+			<div id="inicialCentrado" class="col-sm-12" style="background-color: #6fc0de;"><br></div>
+
+<!----------------------------DESCARGA DE CONTENIDOS----------------------------------------->			
+			
+			<div id="inicialIzq"class="col-sm-12" style="background-color:#d0e5ec;">
+				<br>
+				<center>
+				<div id="inicialIzq"class="col-sm-3" style="background-color:transparent;">
+					<h4 style="color: #40a2c6;" class="text-left bold"><strong>Descarga de Contenidos</strong></h4>
+				</div>
+				
+<!----------------------------SELECT CONTENIDOS SEMANAS----------------------------------------->
+				
+				<div id="inicialIzq"class="col-sm-2" style="background-color:transparent;">
+					<div class="form-group" >
+						<label style="color: #40a2c6;" for="sel1">Seleccione Semana:</label>
+						<select  class="btn btn-info" id="select" class="form-control" id="sel1" >
+							<option value="1">Semana 1 (19-23 octubre)</option>
+							<option value="2">Semana 2 (26-30 octubre)</option>
+							<option value="3">Semana 3 (2-6 noviembre)</option>
+							<option value="4">Semana 4 (9-13 noviembre)</option>
+							<option value="5">Semana 5 (16-20 noviembre)</option>
+							<option value="6">Semana 6 (23-27 noviembre)</option>
+							<option value="8">Semana 8 (7-11 diciembre)</option>
+							<option value="9">Semana 9 (14-18 diciembre)</option>
+							<option value="10">Semana 10 (4-8 enero)</option>
+							<option value="11">Semana 11 (11-15 enero)</option>
+							<option value="12">Semana 12 (18-22 enero)</option>
+							<option value="13">Semana 13 (25-29 enero)</option>
+							<option value="14">Semana 14 (1-5 febrero)</option>
+							<option value="15">Semana 15 (8-12 febrero)</option>
+						</select>
+					</div>
+				</div>
+				
+<!----------------------------CHECKBOX CONTENIDOS----------------------------------------->
+				
+				<div id="inicialIzq"class="col-sm-4" style="background-color:transparent;">
+					<div id="tema" class="checkbox-inline">
+						<label style="color: #40a2c6;"><input id="checkTema" type="checkbox" value="">Tema</label>
+					</div>
+					<div id="actividad" class="checkbox-inline">
+						<label style="color: #40a2c6;"><input id="checkActividad" type="checkbox" value="">Actividad</label>
+					</div>
+					<div id="test" class="checkbox-inline">
+						<label style="color: #40a2c6;"><input id="checkTest" type="checkbox" value="">Test</label>
+					</div>
+					<div id="laboratorio" class="checkbox-inline">
+						<label style="color: #40a2c6;"><input id="checkLaboratorio" type="checkbox" value="">Laboratorio</label>
+					</div>
+				</div>
+				</center>
+				<div id="inicialIzq"class="col-sm-3" style="background-color:transparent;">
+					<center><a type="button" class="btn btn-info" onclick="archivos();">Descargar archivos</a></center>
+				</div>
+			</div>
+
+		</div>
+		
+		
+<!--////////////////////////////////OCTUBRE////////////////////////////////////////-->
+		<br>
+		<div id="octubre" class="row">
+			<div id="inicialCentrado" class="col-sm-12" style="background-color: #6fc0de;">
+				<h4 style="color: white" class="text-center bold"><strong>OCTUBRE</strong></h4>
+			</div>
+		</div>
+		
+<!--////////////////////////////////SEMANA 1////////////////////////////////////////-->
+		
+		<div id="semana1" class="row">
+			<div id="inicialCentrado" class="col-sm-12" style="background-color: #d0e5ec;">
+				<h4 style="color: #40a2c6;" class="text-center bold"><strong>Semana 1 </strong></h4>
+				<h5 style="color: #40a2c6;" class="text-center bold"><strong>19 de octubre de 2020 - 23 de octubre de 2020 </strong></h5>
+			</div>
+		</div>
+		<div id="semanaContenido" class="row">
+			<div id="inicialCentrado" class="col-sm-12" style="background-color: white;">
+				<div id="inicialCentrado" class="col-sm-4" style="background-color: transparent;">
+					<h5 style="color: #40a2c6;" class="text-center bold"><strong>Temas</strong></h5>
+				</div>
+				<div id="inicialCentrado" class="col-sm-3" style="background-color: transparent;">
+					<h5 style="color: #40a2c6;" class="text-center bold"><strong>Actividades</strong></h5>
+				</div>
+				<div id="inicialCentrado" class="col-sm-3" style="background-color: transparent;">
+					<h5 style="color: #40a2c6;" class="text-center bold"><strong>Eventos</strong></h5>
+				</div>
+				<div id="inicialCentrado" class="col-sm-2" style="background-color: transparent;">
+					<h5 style="color: #40a2c6;" class="text-center bold"><strong>Laboratorios</strong></h5>
+				</div>
+			</div>
+			<br>
+		</div>
+		<div id="semana1Contenido" class="row">
+			<div id="inicialCentrado" class="col-sm-12 border-right-5" style="background-color: white;">
+				<div id="temas" class="col-md-4 border" style="background-color: #dbf1f9;">
+					<div class="container-fluid">
+						<br><table class="table">
+							<tr>
+								<td>
+									<dl class="dl-vertical">
+										<dt>1.1.-<i>¿Cómo estudiar este tema?</i></dt>
+										<dt>1.2.-<i>Introducción</i></dt>
+										<dt>1.3.-<i>Repaso HTML</i></dt>
+										<dt>1.4.-<i>Nuevos elementos HTML5</i></dt>
+										<dt>1.5.-<i>Formularios: nuevos controles</i></dt>
+									</dl>
+									<a style="font-size: 12px;" type="button" class="btn btn-link" href="archives/temas/TEMA1_UNIR.zip">Descargar Tema 1</a>
+								</td>
+							</tr>
+							<tr>
+								<b>TEMA 01</b>: Lenguajes de Marcado HTML5
+							</tr>
+						</table>
+					</div>
+				</div>
+				<div id="temas" class="col-sm-3" style="background-color: transparent;">
+					<h5 style="color: #505050;" class="text-left bold"><strong></strong></h5>
+				</div>
+				<div id="temas" class="col-sm-3" style="background-color: #dbf1f9;">
+					<h5 style="color: #505050;" class="text-left bold"><strong>Test - TEMA 01</strong></h5>
+					<h6 style="color: #505050;" class="text-left bold"><b>Fecha de entrega</b>: 21 de febrero de 2021</h6>
+					<h6 style="color: #505050;" class="text-left bold"><b>Puntuación</b>: 0.1 puntos</h6>
+					<a style="font-size: 12px;" type="button" class="btn btn-link" href="archives/tests/TEST_TEMA01.zip">Descargar Test Tema 1</a>
+				</div>
+				<div id="temas" class="col-sm-2" style="background-color: transparent;">
+					<h5 style="color: #505050;" class="text-left bold"><strong></strong></h5>
+				</div>
+			</div>
+			<div id="inicialCentrado" class="col-sm-12 border-right-5" style="background-color: white;">
+				<h5 style="color: #505050;" class="text-left bold"></h5>
+			</div>
+		</div>
+		<br>
+
+<!--////////////////////////////////SEMANA 2////////////////////////////////////////-->
+
+		<div id="semana2" class="row">
+			<div id="inicialCentrado" class="col-sm-12" style="background-color: #d0e5ec;">
+				<h4 style="color: #40a2c6;" class="text-center bold"><strong>Semana 2 </strong></h4>
+				<h5 style="color: #40a2c6;" class="text-center bold"><strong>26 de octubre de 2020 - 30 de octubre de 2020 </strong></h5>
+			</div>
+		</div>
+		<div id="semanaContenido" class="row">
+			<div id="inicialCentrado" class="col-sm-12" style="background-color: white;">
+				<div id="inicialCentrado" class="col-sm-4" style="background-color: transparent;">
+					<h5 style="color: #40a2c6;" class="text-center bold"><strong>Temas</strong></h5>
+				</div>
+				<div id="inicialCentrado" class="col-sm-3" style="background-color: transparent;">
+					<h5 style="color: #40a2c6;" class="text-center bold"><strong>Actividades</strong></h5>
+				</div>
+				<div id="inicialCentrado" class="col-sm-3" style="background-color: transparent;">
+					<h5 style="color: #40a2c6;" class="text-center bold"><strong>Eventos</strong></h5>
+				</div>
+				<div id="inicialCentrado" class="col-sm-2" style="background-color: transparent;">
+					<h5 style="color: #40a2c6;" class="text-center bold"><strong>Laboratorios</strong></h5>
+				</div>
+			</div>
+			<br>
+		</div>
+		<div id="semana2Contenido" class="row">
+			<div id="inicialCentrado" class="col-sm-12 border-right-5" style="background-color: white;">
+				<div id="temas" class="col-md-4 border" style="background-color: #dbf1f9;">
+					<div class="container-fluid">
+						<br><table class="table">
+							<tr>
+								<td>
+									<dl class="dl-vertical">
+										<dt>2.1.-<i>¿Cómo estudiar este tema?</i></dt>
+										<dt>2.2.-<i>Introducción</i></dt>
+										<dt>2.3.-<i>Primeros pasos con CSS</i></dt>
+										<dt>2.4.-<i>Introducción a CSS3</i></dt>
+									</dl>
+									<a style="font-size: 12px;" type="button" class="btn btn-link" href="archives/temas/TEMA2_UNIR.zip">Descargar Tema 2</a>
+								</td>
+							</tr>
+							<tr>
+								<b>TEMA 02</b>: Introducción a Hojas de Estilo CSS
+							</tr>
+						</table>
+					</div>
+				</div>
+				<div id="temas" class="col-sm-3" style="background-color: #dbf1f9;">
+					<h5 style="color: #505050;" class="text-left bold"><strong>Trabajo - Crea tu blog con un generador de sitios estáticos</strong></h5>
+					<h6 style="color: #505050;" class="text-left bold"><b>Fecha de entrega</b>: 26 de noviembre de 2020</h6>
+					<h6 style="color: #505050;" class="text-left bold"><b>Puntuación</b>: 2.0 puntos</h6>
+					<a style="font-size: 12px;" type="button" class="btn btn-link" href="archives/actividades/gii37t2tra1.zip">Descargar Actividad 1</a>
+				</div>
+				<div id="temas" class="col-sm-3" style="background-color: #dbf1f9;">
+					<h5 style="color: #505050;" class="text-left bold"><strong>Test - TEMA 02</strong></h5>
+					<h6 style="color: #505050;" class="text-left bold"><b>Fecha de entrega</b>: 21 de febrero de 2021</h6>
+					<h6 style="color: #505050;" class="text-left bold"><b>Puntuación</b>: 0.1 puntos</h6>
+					<a style="font-size: 12px;" type="button" class="btn btn-link" href="archives/tests/TEST_TEMA02.zip">Descargar Test Tema 2</a>
+				</div>
+				<div id="temas" class="col-sm-2" style="background-color: transparent;">
+					<h5 style="color: #505050;" class="text-left bold"><strong></strong></h5>
+				</div>
+			</div>
+			<div id="inicialCentrado" class="col-sm-12 border-right-5" style="background-color: white;">
+				<h5 style="color: #505050;" class="text-left bold"></h5>
+			</div>
+		</div>
+		<br>
+
+<!--////////////////////////////////NOVIEMBRE////////////////////////////////////////-->
+
+		<div id="noviembre" class="row">
+			<div id="inicialCentrado" class="col-sm-12" style="background-color: #6fc0de;">
+				<h4 style="color: white" class="text-center bold"><strong>NOVIEMBRE</strong></h4>
+			</div>
+		</div>
+
+<!--////////////////////////////////SEMANA 3////////////////////////////////////////-->
+
+		<div id="semana3" class="row">
+			<div id="inicialCentrado" class="col-sm-12" style="background-color: #d0e5ec;">
+				<h4 style="color: #40a2c6;" class="text-center bold"><strong>Semana 3 </strong></h4>
+				<h5 style="color: #40a2c6;" class="text-center bold"><strong>2 de noviembre de 2020 - 6 de noviembre de 2020 </strong></h5>
+			</div>
+		</div>
+		<div id="semanaContenido" class="row">
+			<div id="inicialCentrado" class="col-sm-12" style="background-color: white;">
+				<div id="inicialCentrado" class="col-sm-4" style="background-color: transparent;">
+					<h5 style="color: #40a2c6;" class="text-center bold"><strong>Temas</strong></h5>
+				</div>
+				<div id="inicialCentrado" class="col-sm-3" style="background-color: transparent;">
+					<h5 style="color: #40a2c6;" class="text-center bold"><strong>Actividades</strong></h5>
+				</div>
+				<div id="inicialCentrado" class="col-sm-3" style="background-color: transparent;">
+					<h5 style="color: #40a2c6;" class="text-center bold"><strong>Eventos</strong></h5>
+				</div>
+				<div id="inicialCentrado" class="col-sm-2" style="background-color: transparent;">
+					<h5 style="color: #40a2c6;" class="text-center bold"><strong>Laboratorios</strong></h5>
+				</div>
+			</div>
+			<br>
+		</div>
+		<div id="semana3Contenido" class="row">
+			<div id="inicialCentrado" class="col-sm-12 border-right-5" style="background-color: white;">
+				<div id="temas" class="col-md-4 border" style="background-color: #dbf1f9;">
+					<div class="container-fluid">
+						<br><table class="table">
+							<tr>
+								<td>
+									<dl class="dl-vertical">
+										<dt>3.1.-<i>¿Cómo estudiar este tema?</i></dt>
+										<dt>3.2.-<i>Introducción</i></dt>
+									</dl>
+									<a style="font-size: 12px;" type="button" class="btn btn-link" href="archives/temas/TEMA3_UNIR.zip">Descargar Tema 3</a>
+								</td>
+							</tr>
+							<tr>
+								<b>TEMA 03</b>: Lenguaje script de navegador: JavaScript
+							</tr>
+						</table>
+					</div>
+				</div>
+				<div id="temas" class="col-sm-3" style="background-color: transparent;">
+					
+				</div>
+				<div id="temas" class="col-sm-3" style="background-color: transparent;">
+					
+				</div>
+				<div id="temas" class="col-sm-2" style="background-color: transparent;">
+					<h5 style="color: #505050;" class="text-left bold"><strong></strong></h5>
+				</div>
+			</div>
+			<div id="inicialCentrado" class="col-sm-12 border-right-5" style="background-color: white;">
+				<h5 style="color: #505050;" class="text-left bold"></h5>
+			</div>
+		</div>
+		<br>
+
+<!--////////////////////////////////SEMANA 4////////////////////////////////////////-->
+
+		<div id="semana4" class="row">
+			<div id="inicialCentrado" class="col-sm-12" style="background-color: #d0e5ec;">
+				<h4 style="color: #40a2c6;" class="text-center bold"><strong>Semana 4 </strong></h4>
+				<h5 style="color: #40a2c6;" class="text-center bold"><strong>9 de noviembre de 2020 - 13 de noviembre de 2020 </strong></h5>
+			</div>
+		</div>
+		<div id="semanaContenido" class="row">
+			<div id="inicialCentrado" class="col-sm-12" style="background-color: white;">
+				<div id="inicialCentrado" class="col-sm-4" style="background-color: transparent;">
+					<h5 style="color: #40a2c6;" class="text-center bold"><strong>Temas</strong></h5>
+				</div>
+				<div id="inicialCentrado" class="col-sm-3" style="background-color: transparent;">
+					<h5 style="color: #40a2c6;" class="text-center bold"><strong>Actividades</strong></h5>
+				</div>
+				<div id="inicialCentrado" class="col-sm-3" style="background-color: transparent;">
+					<h5 style="color: #40a2c6;" class="text-center bold"><strong>Eventos</strong></h5>
+				</div>
+				<div id="inicialCentrado" class="col-sm-2" style="background-color: transparent;">
+					<h5 style="color: #40a2c6;" class="text-center bold"><strong>Laboratorios</strong></h5>
+				</div>
+			</div>
+			<br>
+		</div>
+		<div id="semana2Contenido" class="row">
+			<div id="inicialCentrado" class="col-sm-12 border-right-5" style="background-color: white;">
+				<div id="temas" class="col-md-4 border" style="background-color: #dbf1f9;">
+					<div class="container-fluid">
+						<br><table class="table">
+							<tr>
+								<td>
+									<dl class="dl-vertical">
+										<dt>3.3.-<i>DOM</i></dt>
+										<dt>3.4.-<i>Eventos</i></dt>
+									</dl>
+									<a style="font-size: 12px;" type="button" class="btn btn-link" href="archives/temas/TEMA3_UNIR.zip">Descargar Tema 3</a>
+								</td>
+							</tr>
+							<tr>
+								<b>TEMA 03</b>: Lenguaje script de navegador: JavaScript (continuación)
+							</tr>
+						</table>
+					</div>
+				</div>
+				<div id="temas" class="col-sm-3" style="background-color: transparent;">
+					
+				</div>
+				<div id="temas" class="col-sm-3" style="background-color: transparent;">
+					
+				</div>
+				<div id="temas" class="col-sm-2" style="background-color: transparent;">
+					<h5 style="color: #505050;" class="text-left bold"><strong></strong></h5>
+				</div>
+			</div>
+			<div id="inicialCentrado" class="col-sm-12 border-right-5" style="background-color: white;">
+				<h5 style="color: #505050;" class="text-left bold"></h5>
+			</div>
+		</div>
+		<br>
+
+<!--////////////////////////////////SEMANA 5////////////////////////////////////////-->
+
+		<div id="semana5" class="row">
+			<div id="inicialCentrado" class="col-sm-12" style="background-color: #d0e5ec;">
+				<h4 style="color: #40a2c6;" class="text-center bold"><strong>Semana 5 </strong></h4>
+				<h5 style="color: #40a2c6;" class="text-center bold"><strong>16 de noviembre de 2020 - 20 de noviembre de 2020 </strong></h5>
+			</div>
+		</div>
+		<div id="semanaContenido" class="row">
+			<div id="inicialCentrado" class="col-sm-12" style="background-color: white;">
+				<div id="inicialCentrado" class="col-sm-4" style="background-color: transparent;">
+					<h5 style="color: #40a2c6;" class="text-center bold"><strong>Temas</strong></h5>
+				</div>
+				<div id="inicialCentrado" class="col-sm-3" style="background-color: transparent;">
+					<h5 style="color: #40a2c6;" class="text-center bold"><strong>Actividades</strong></h5>
+				</div>
+				<div id="inicialCentrado" class="col-sm-3" style="background-color: transparent;">
+					<h5 style="color: #40a2c6;" class="text-center bold"><strong>Eventos</strong></h5>
+				</div>
+				<div id="inicialCentrado" class="col-sm-2" style="background-color: transparent;">
+					<h5 style="color: #40a2c6;" class="text-center bold"><strong>Laboratorios</strong></h5>
+				</div>
+			</div>
+			<br>
+		</div>
+		<div id="semana5Contenido" class="row">
+			<div id="inicialCentrado" class="col-sm-12 border-right-5" style="background-color: white;">
+				<div id="temas" class="col-md-4 border" style="background-color: #dbf1f9;">
+					<div class="container-fluid">
+						<br><table class="table">
+							<tr>
+								<td>
+									<dl class="dl-vertical">
+										<dt>3.5.-<i>JQuery</i></dt>
+									</dl>
+									<a style="font-size: 12px;" type="button" class="btn btn-link" href="archives/temas/TEMA3_UNIR.zip">Descargar Tema 3</a>
+								</td>
+							</tr>
+							<tr>
+								<b>TEMA 03</b>: Lenguaje script de navegador: JavaScript (continuación)
+							</tr>
+						</table>
+					</div>
+				</div>
+				<div id="actividades" class="col-sm-3" style="background-color: transparent;">
+					<h5 style="color: #505050;" class="text-left bold"><strong></strong></h5>
+				</div>
+				<div id="eventos" class="col-sm-3" style="background-color: transparent;">
+					<h5 style="color: #505050;" class="text-left bold"><strong></strong></h5>
+				</div>
+				<div id="laboratorios" class="col-sm-2" style="background-color: transparent;">
+					<h5 style="color: #505050;" class="text-left bold"><strong></strong></h5>
+				</div>
+			</div>
+			<div id="inicialCentrado" class="col-sm-12 border-right-5" style="background-color: white;">
+				<h5 style="color: #505050;" class="text-left bold"></h5>
+			</div>
+		</div>
+		<br>
+
+<!--////////////////////////////////SEMANA 6////////////////////////////////////////-->
+
+		<div id="semana6" class="row">
+			<div id="inicialCentrado" class="col-sm-12" style="background-color: #d0e5ec;">
+				<h4 style="color: #40a2c6;" class="text-center bold"><strong>Semana 6 </strong></h4>
+				<h5 style="color: #40a2c6;" class="text-center bold"><strong>23 de noviembre de 2020 - 27 de noviembre de 2020 </strong></h5>
+			</div>
+		</div>
+		<div id="semanaContenido" class="row">
+			<div id="inicialCentrado" class="col-sm-12" style="background-color: white;">
+				<div id="inicialCentrado" class="col-sm-4" style="background-color: transparent;">
+					<h5 style="color: #40a2c6;" class="text-center bold"><strong>Temas</strong></h5>
+				</div>
+				<div id="inicialCentrado" class="col-sm-3" style="background-color: transparent;">
+					<h5 style="color: #40a2c6;" class="text-center bold"><strong>Actividades</strong></h5>
+				</div>
+				<div id="inicialCentrado" class="col-sm-3" style="background-color: transparent;">
+					<h5 style="color: #40a2c6;" class="text-center bold"><strong>Eventos</strong></h5>
+				</div>
+				<div id="inicialCentrado" class="col-sm-2" style="background-color: transparent;">
+					<h5 style="color: #40a2c6;" class="text-center bold"><strong>Laboratorios</strong></h5>
+				</div>
+			</div>
+			<br>
+		</div>
+		<div id="semana6Contenido" class="row">
+			<div id="inicialCentrado" class="col-sm-12 border-right-5" style="background-color: white;">
+				<div id="temas" class="col-md-4 border" style="background-color: #dbf1f9;">
+					<div class="container-fluid">
+						<br><table class="table">
+							<tr>
+								<td>
+									<dl class="dl-vertical">
+										<dt>3.6.-<i>Ajax</i></dt>
+									</dl>
+									<a style="font-size: 12px;" type="button" class="btn btn-link" href="archives/temas/TEMA3_UNIR.zip">Descargar Tema 3</a>
+								</td>
+							</tr>
+							<tr>
+								<b>TEMA 03</b>: Lenguaje script de navegador: JavaScript (continuación)
+							</tr>
+						</table>
+					</div>
+				</div>
+				<div id="actividades" class="col-sm-3" style="background-color: #dbf1f9;">
+					<h5 style="color: #505050;" class="text-left bold"><strong>Trabajo - Interacción con un servidor</strong></h5>
+					<h6 style="color: #505050;" class="text-left bold"><b>Fecha de entrega</b>: 21 de enero de 2021</h6>
+					<h6 style="color: #505050;" class="text-left bold"><b>Puntuación</b>: 2.0 puntos</h6>
+					<a style="font-size: 12px;" type="button" class="btn btn-link" href="archives/actividades/gii37t3tra2.zip">Descargar Actividad 2</a>
+				</div>
+				<div id="eventos" class="col-sm-3" style="background-color: #dbf1f9;">
+					<h5 style="color: #505050;" class="text-left bold"><strong>Test - TEMA 03</strong></h5>
+					<h6 style="color: #505050;" class="text-left bold"><b>Fecha de entrega</b>: 21 de febrero de 2021</h6>
+					<h6 style="color: #505050;" class="text-left bold"><b>Puntuación</b>: 0.1 puntos</h6>
+					<a style="font-size: 12px;" type="button" class="btn btn-link" href="archives/tests/TEST_TEMA03.zip">Descargar Test Tema 3</a>
+				</div>
+				<div id="laboratorios" class="col-sm-2" style="background-color: transparent;">
+					<h5 style="color: #505050;" class="text-left bold"><strong></strong></h5>
+				</div>
+			</div>
+			<div id="inicialCentrado" class="col-sm-12 border-right-5" style="background-color: white;">
+				<h5 style="color: #505050;" class="text-left bold"></h5>
+			</div>
+		</div>
+		<br>
+
+<!--////////////////////////////////SEMANA 7////////////////////////////////////////-->
+
+		<div id="semana7" class="row">
+			<div id="inicialCentrado" class="col-sm-12" style="background-color: #d0e5ec;">
+				<h4 style="color: #40a2c6;" class="text-center bold"><strong>Semana 7 </strong></h4>
+				<h5 style="color: #40a2c6;" class="text-center bold"><strong>30 de noviembre de 2020 - 4 de diciembre de 2020 </strong></h5>
+			</div>
+		</div>
+		
+		<div id="semana7Contenido" class="row">
+			<div id="inicialCentrado" class="col-sm-12 border-right-5" style="background-color: white;">
+				<br>
+				<div id="temas" class="col-md-12 border" style="background-color: white;">
+					<h5 style="color: #40a2c6;" class="text-center bold"><strong>SEMANA DE REPASO</strong></h5>
+				</div>
+				
+			</div>
+			<div id="inicialCentrado" class="col-sm-12 border-right-5" style="background-color: white;">
+				<h5 style="color: #505050;" class="text-left bold"></h5>
+			</div>
+		</div>
+		<br>
+
+<!--////////////////////////////////DICIEMBRE////////////////////////////////////////-->
+
+		<div id="diciembre" class="row">
+			<div id="inicialCentrado" class="col-sm-12" style="background-color: #6fc0de;">
+				<h4 style="color: white" class="text-center bold"><strong>DICIEMBRE</strong></h4>
+			</div>
+		</div>
+
+<!--////////////////////////////////SEMANA 8////////////////////////////////////////-->
+
+		<div id="semana8" class="row">
+			<div id="inicialCentrado" class="col-sm-12" style="background-color: #d0e5ec;">
+				<h4 style="color: #40a2c6;" class="text-center bold"><strong>Semana 8 </strong></h4>
+				<h5 style="color: #40a2c6;" class="text-center bold"><strong>7 de diciembre de 2020 - 11 de diciembre de 2020 </strong></h5>
+			</div>
+		</div>
+		<div id="semanaContenido" class="row">
+			<div id="inicialCentrado" class="col-sm-12" style="background-color: white;">
+				<div id="inicialCentrado" class="col-sm-4" style="background-color: transparent;">
+					<h5 style="color: #40a2c6;" class="text-center bold"><strong>Temas</strong></h5>
+				</div>
+				<div id="inicialCentrado" class="col-sm-3" style="background-color: transparent;">
+					<h5 style="color: #40a2c6;" class="text-center bold"><strong>Actividades</strong></h5>
+				</div>
+				<div id="inicialCentrado" class="col-sm-3" style="background-color: transparent;">
+					<h5 style="color: #40a2c6;" class="text-center bold"><strong>Eventos</strong></h5>
+				</div>
+				<div id="inicialCentrado" class="col-sm-2" style="background-color: transparent;">
+					<h5 style="color: #40a2c6;" class="text-center bold"><strong>Laboratorios</strong></h5>
+				</div>
+			</div>
+			<br>
+		</div>
+		<div id="semana8Contenido" class="row">
+			<div id="inicialCentrado" class="col-sm-12 border-right-5" style="background-color: white;">
+				<div id="temas" class="col-md-4 border" style="background-color: #dbf1f9;">
+					<div class="container-fluid">
+						<br><table class="table">
+							<tr>
+								<td>
+									<dl class="dl-vertical">
+										<dt>4.1.-<i>¿Cómo estudiar este tema?</i></dt>
+										<dt>4.2.-<i>Introducción</i></dt>
+										<dt>4.3.-<i>Contexto</i></dt>
+										<dt>4.4.-<i>Componentes e Interfaces</i></dt>
+										<dt>4.5.-<i>Estados de un componente</i></dt>
+									</dl>
+									<a style="font-size: 12px;" type="button" class="btn btn-link" href="archives/temas/TEMA04_UNIR.zip">Descargar Tema 4</a>
+								</td>
+							</tr>
+							<tr>
+								<b>TEMA 04</b>: Concepto de la Programación Orientada a Componentes
+							</tr>
+						</table>
+					</div>
+				</div>
+				<div id="actividades" class="col-sm-3" style="background-color: transparent;">
+					
+				</div>
+				<div id="eventos" class="col-sm-3" style="background-color: #dbf1f9;">
+					<h5 style="color: #505050;" class="text-left bold"><strong>Test - TEMA 04</strong></h5>
+					<h6 style="color: #505050;" class="text-left bold"><b>Fecha de entrega</b>: 21 de febrero de 2021</h6>
+					<h6 style="color: #505050;" class="text-left bold"><b>Puntuación</b>: 0.1 puntos</h6>
+					<a style="font-size: 12px;" type="button" class="btn btn-link" href="archives/tests/TEST_TEMA04.zip">Descargar Test Tema 4</a>
+				</div>
+				<div id="laboratorios" class="col-sm-2" style="background-color: #dbf1f9;">
+					<h5 style="color: #505050;" class="text-left bold"><strong>Laboratorio 01 - Tecnologías AJAX</strong></h5>
+					<h6 style="color: #505050;" class="text-left bold"><b>Fecha de entrega</b>: 7 de enero de 2021</h6>
+					<h6 style="color: #505050;" class="text-left bold"><b>Puntuación</b>: 3.0 puntos</h6>
+					<a style="font-size: 12px;" type="button" class="btn btn-link" href="archives/laboratorios/gii37t4lab1.zip">Descargar Laboratorio 1</a>
+				</div>
+			</div>
+			<div id="inicialCentrado" class="col-sm-12 border-right-5" style="background-color: white;">
+				<h5 style="color: #505050;" class="text-left bold"></h5>
+			</div>
+		</div>
+		<br>
+
+<!--////////////////////////////////SEMANA 9////////////////////////////////////////-->
+
+		<div id="semana9" class="row">
+			<div id="inicialCentrado" class="col-sm-12" style="background-color: #d0e5ec;">
+				<h4 style="color: #40a2c6;" class="text-center bold"><strong>Semana 9 </strong></h4>
+				<h5 style="color: #40a2c6;" class="text-center bold"><strong>14 de diciembre de 2020 - 18 de diciembre de 2020 </strong></h5>
+			</div>
+		</div>
+		<div id="semanaContenido" class="row">
+			<div id="inicialCentrado" class="col-sm-12" style="background-color: white;">
+				<div id="inicialCentrado" class="col-sm-4" style="background-color: transparent;">
+					<h5 style="color: #40a2c6;" class="text-center bold"><strong>Temas</strong></h5>
+				</div>
+				<div id="inicialCentrado" class="col-sm-3" style="background-color: transparent;">
+					<h5 style="color: #40a2c6;" class="text-center bold"><strong>Actividades</strong></h5>
+				</div>
+				<div id="inicialCentrado" class="col-sm-3" style="background-color: transparent;">
+					<h5 style="color: #40a2c6;" class="text-center bold"><strong>Eventos</strong></h5>
+				</div>
+				<div id="inicialCentrado" class="col-sm-2" style="background-color: transparent;">
+					<h5 style="color: #40a2c6;" class="text-center bold"><strong>Laboratorios</strong></h5>
+				</div>
+			</div>
+			<br>
+		</div>
+		<div id="semana9Contenido" class="row">
+			<div id="inicialCentrado" class="col-sm-12 border-right-5" style="background-color: white;">
+				<div id="temas" class="col-md-4 border" style="background-color: #dbf1f9;">
+					<div class="container-fluid">
+						<br><table class="table">
+							<tr>
+								<td>
+									<dl class="dl-vertical">
+										<dt>5.1.-<i>¿Cómo estudiar este tema?</i></dt>
+										<dt>5.2.-<i>Introducción</i></dt>
+										<dt>5.3.-<i>Arquitecturas actuales</i></dt>
+										<dt>5.4.-<i>Integración y despliegue de componentes</i></dt>
+									</dl>
+									<a style="font-size: 12px;" type="button" class="btn btn-link" href="archives/temas/TEMA05_UNIR.zip">Descargar Tema 5</a>
+								</td>
+							</tr>
+							<tr>
+								<b>TEMA 05</b>: Arquitectura de Componentes
+							</tr>
+						</table>
+					</div>
+				</div>
+				<div id="actividades" class="col-sm-3" style="background-color: transparent;">
+					
+				</div>
+				<div id="eventos" class="col-sm-3" style="background-color: #dbf1f9;">
+					<h5 style="color: #505050;" class="text-left bold"><strong>Test - TEMA 05</strong></h5>
+					<h6 style="color: #505050;" class="text-left bold"><b>Fecha de entrega</b>: 21 de febrero de 2021</h6>
+					<h6 style="color: #505050;" class="text-left bold"><b>Puntuación</b>: 0.1 puntos</h6>
+					<a style="font-size: 12px;" type="button" class="btn btn-link" href="archives/tests/TEST_TEMA05.zip">Descargar Test Tema 5</a>
+				</div>
+				<div id="laboratorios" class="col-sm-2" style="background-color: transparent;">
+					<h5 style="color: #505050;" class="text-left bold"><strong></strong></h5>
+				</div>
+			</div>
+			<div id="inicialCentrado" class="col-sm-12 border-right-5" style="background-color: white;">
+				<h5 style="color: #505050;" class="text-left bold"></h5>
+			</div>
+		</div>
+		<br>
+
+<!--////////////////////////////////VACACIONES DE NAVIDAD////////////////////////////////////////--////////////////////////////////////////-->
+
+		<div id="semanaNavidad" class="row">
+			<div id="inicialCentrado" class="col-sm-12" style="background-color: #d0e5ec;">
+				<h4 style="color: #40a2c6;" class="text-center bold"><strong>Semana No Lectiva </strong></h4>
+				<h5 style="color: #40a2c6;" class="text-center bold"><strong>21 de diciembre de 2020 - 3 de enero de 2021 </strong></h5>
+			</div>
+		</div>
+		
+		<div id="semanaNavidadContenido" class="row">
+			<div id="inicialCentrado" class="col-sm-12 border-right-5" style="background-color: white;">
+				<br>
+				<div id="temas" class="col-md-12 border" style="background-color: white;">
+					<h5 style="color: #40a2c6;" class="text-center bold"><strong>VACACIONES DE NAVIDAD</strong></h5>
+				</div>
+				
+			</div>
+			<div id="inicialCentrado" class="col-sm-12 border-right-5" style="background-color: white;">
+				<h5 style="color: #505050;" class="text-left bold"></h5>
+			</div>
+		</div>
+		<br>
+
+<!--////////////////////////////////ENERO////////////////////////////////////////-->
+
+		<div id="enero" class="row">
+			<div id="inicialCentrado" class="col-sm-12" style="background-color: #6fc0de;">
+				<h4 style="color: white" class="text-center bold"><strong>ENERO</strong></h4>
+			</div>
+		</div>
+
+<!--////////////////////////////////SEMANA 10////////////////////////////////////////-->
+
+		<div id="semana10" class="row">
+			<div id="inicialCentrado" class="col-sm-12" style="background-color: #d0e5ec;">
+				<h4 style="color: #40a2c6;" class="text-center bold"><strong>Semana 10 </strong></h4>
+				<h5 style="color: #40a2c6;" class="text-center bold"><strong>4 de enero de 2021 - 8 de enero de 2021 </strong></h5>
+			</div>
+		</div>
+		<div id="semanaContenido" class="row">
+			<div id="inicialCentrado" class="col-sm-12" style="background-color: white;">
+				<div id="inicialCentrado" class="col-sm-4" style="background-color: transparent;">
+					<h5 style="color: #40a2c6;" class="text-center bold"><strong>Temas</strong></h5>
+				</div>
+				<div id="inicialCentrado" class="col-sm-3" style="background-color: transparent;">
+					<h5 style="color: #40a2c6;" class="text-center bold"><strong>Actividades</strong></h5>
+				</div>
+				<div id="inicialCentrado" class="col-sm-3" style="background-color: transparent;">
+					<h5 style="color: #40a2c6;" class="text-center bold"><strong>Eventos</strong></h5>
+				</div>
+				<div id="inicialCentrado" class="col-sm-2" style="background-color: transparent;">
+					<h5 style="color: #40a2c6;" class="text-center bold"><strong>Laboratorios</strong></h5>
+				</div>
+			</div>
+			<br>
+		</div>
+		<div id="semana10Contenido" class="row">
+			<div id="inicialCentrado" class="col-sm-12 border-right-5" style="background-color: white;">
+				<div id="temas" class="col-md-4 border" style="background-color: #dbf1f9;">
+					<div class="container-fluid">
+						<br><table class="table">
+							<tr>
+								<td>
+									<dl class="dl-vertical">
+										<dt>6.1.-<i>¿Cómo estudiar este tema?</i></dt>
+										<dt>6.2.-<i>Introducción</i></dt>
+										<dt>6.3.-<i>Diseño con rejilla</i></dt>
+										<dt>6.4.-<i>Formularios</i></dt>
+										<dt>6.5.-<i>Componentes</i></dt>
+										<dt>6.6.-<i>Referencias bibliográficas</i></dt>
+									</dl>
+									<a style="font-size: 12px;" type="button" class="btn btn-link" href="archives/temas/TEMA06_UNIR.zip">Descargar Tema 6</a>
+								</td>
+							</tr>
+							<tr>
+								<b>TEMA 06</b>: Framework Front-End: Bootstrap
+							</tr>
+						</table>
+					</div>
+				</div>
+				<div id="actividades" class="col-sm-3" style="background-color: #dbf1f9;">
+					<h5 style="color: #505050;" class="text-left bold"><strong>Trabajo - Recreación de un sitio web basado en componentes</strong></h5>
+					<h6 style="color: #505050;" class="text-left bold"><b>Fecha de entrega</b>: 28 de enero de 2021</h6>
+					<h6 style="color: #505050;" class="text-left bold"><b>Puntuación</b>: 2.0 puntos</h6>
+					<a style="font-size: 12px;" type="button" class="btn btn-link" href="archives/actividades/gii37t6tra3.zip">Descargar Actividad 3</a>
+				</div>
+				<div id="eventos" class="col-sm-3" style="background-color: #dbf1f9;">
+					<h5 style="color: #505050;" class="text-left bold"><strong>Test - TEMA 06</strong></h5>
+					<h6 style="color: #505050;" class="text-left bold"><b>Fecha de entrega</b>: 21 de febrero de 2021</h6>
+					<h6 style="color: #505050;" class="text-left bold"><b>Puntuación</b>: 0.1 puntos</h6>
+					<a style="font-size: 12px;" type="button" class="btn btn-link" href="archives/tests/TEST_TEMA06.zip">Descargar Test Tema 6</a>
+				</div>
+				<div id="laboratorios" class="col-sm-2" style="background-color: transparent;">
+					<h5 style="color: #505050;" class="text-left bold"><strong></strong></h5>
+				</div>
+			</div>
+			<div id="inicialCentrado" class="col-sm-12 border-right-5" style="background-color: white;">
+				<h5 style="color: #505050;" class="text-left bold"></h5>
+			</div>
+		</div>
+		<br>
+
+<!--////////////////////////////////SEMANA 11////////////////////////////////////////-->
+
+		<div id="semana11" class="row">
+			<div id="inicialCentrado" class="col-sm-12" style="background-color: #d0e5ec;">
+				<h4 style="color: #40a2c6;" class="text-center bold"><strong>Semana 11 </strong></h4>
+				<h5 style="color: #40a2c6;" class="text-center bold"><strong>11 de enero de 2021 - 15 de enero de 2021 </strong></h5>
+			</div>
+		</div>
+		<div id="semanaContenido" class="row">
+			<div id="inicialCentrado" class="col-sm-12" style="background-color: white;">
+				<div id="inicialCentrado" class="col-sm-4" style="background-color: transparent;">
+					<h5 style="color: #40a2c6;" class="text-center bold"><strong>Temas</strong></h5>
+				</div>
+				<div id="inicialCentrado" class="col-sm-3" style="background-color: transparent;">
+					<h5 style="color: #40a2c6;" class="text-center bold"><strong>Actividades</strong></h5>
+				</div>
+				<div id="inicialCentrado" class="col-sm-3" style="background-color: transparent;">
+					<h5 style="color: #40a2c6;" class="text-center bold"><strong>Eventos</strong></h5>
+				</div>
+				<div id="inicialCentrado" class="col-sm-2" style="background-color: transparent;">
+					<h5 style="color: #40a2c6;" class="text-center bold"><strong>Laboratorios</strong></h5>
+				</div>
+			</div>
+			<br>
+		</div>
+		<div id="semana11Contenido" class="row">
+			<div id="inicialCentrado" class="col-sm-12 border-right-5" style="background-color: white;">
+				<div id="temas" class="col-md-4 border" style="background-color: #dbf1f9;">
+					<div class="container-fluid">
+						<br><table class="table">
+							<tr>
+								<td>
+									<dl class="dl-vertical">
+										<dt>7.1.-<i>¿Cómo estudiar este tema?</i></dt>
+										<dt>7.2.-<i>Métodos de desarrollo web</i></dt>
+										<dt>7.3.-<i>Patrón de diseño: MVC</i></dt>
+									</dl>
+									<a style="font-size: 12px;" type="button" class="btn btn-link" href="archives/temas/TEMA07_UNIR.zip">Descargar Tema 7</a>
+								</td>
+							</tr>
+							<tr>
+								<b>TEMA 07</b>: Modelo Vista-Controlador
+							</tr>
+						</table>
+					</div>
+				</div>
+				<div id="actividades" class="col-sm-3" style="background-color: transparent;">
+					
+				</div>
+				<div id="eventos" class="col-sm-3" style="background-color: #dbf1f9;">
+					<h5 style="color: #505050;" class="text-left bold"><strong>Test - TEMA 07</strong></h5>
+					<h6 style="color: #505050;" class="text-left bold"><b>Fecha de entrega</b>: 21 de febrero de 2021</h6>
+					<h6 style="color: #505050;" class="text-left bold"><b>Puntuación</b>: 0.1 puntos</h6>
+					<a style="font-size: 12px;" type="button" class="btn btn-link" href="archives/tests/TEST_TEMA07.zip">Descargar Test Tema 7</a>
+				</div>
+				<div id="laboratorios" class="col-sm-2" style="background-color: transparent;">
+					<h5 style="color: #505050;" class="text-left bold"><strong></strong></h5>
+				</div>
+			</div>
+			<div id="inicialCentrado" class="col-sm-12 border-right-5" style="background-color: white;">
+				<h5 style="color: #505050;" class="text-left bold"></h5>
+			</div>
+		</div>
+		<br>
+
+<!--////////////////////////////////SEMANA 12////////////////////////////////////////-->
+
+		<div id="semana12" class="row">
+			<div id="inicialCentrado" class="col-sm-12" style="background-color: #d0e5ec;">
+				<h4 style="color: #40a2c6;" class="text-center bold"><strong>Semana 12 </strong></h4>
+				<h5 style="color: #40a2c6;" class="text-center bold"><strong>18 de enero de 2021 - 22 de enero de 2021 </strong></h5>
+			</div>
+		</div>
+		<div id="semanaContenido" class="row">
+			<div id="inicialCentrado" class="col-sm-12" style="background-color: white;">
+				<div id="inicialCentrado" class="col-sm-4" style="background-color: transparent;">
+					<h5 style="color: #40a2c6;" class="text-center bold"><strong>Temas</strong></h5>
+				</div>
+				<div id="inicialCentrado" class="col-sm-3" style="background-color: transparent;">
+					<h5 style="color: #40a2c6;" class="text-center bold"><strong>Actividades</strong></h5>
+				</div>
+				<div id="inicialCentrado" class="col-sm-3" style="background-color: transparent;">
+					<h5 style="color: #40a2c6;" class="text-center bold"><strong>Eventos</strong></h5>
+				</div>
+				<div id="inicialCentrado" class="col-sm-2" style="background-color: transparent;">
+					<h5 style="color: #40a2c6;" class="text-center bold"><strong>Laboratorios</strong></h5>
+				</div>
+			</div>
+			<br>
+		</div>
+		<div id="semana12Contenido" class="row">
+			<div id="inicialCentrado" class="col-sm-12 border-right-5" style="background-color: white;">
+				<div id="temas" class="col-md-4 border" style="background-color: #dbf1f9;">
+					<div class="container-fluid">
+						<br><table class="table">
+							<tr>
+								<td>
+									<dl class="dl-vertical">
+										<dt>8.1.-<i>¿Cómo estudiar este tema?</i></dt>
+										<dt>8.2.-<i>Introducción</i></dt>
+										<dt>8.3.-<i>Incremento de recursos en computación</i></dt>
+										<dt>8.4.-<i>Concepto de tecnología Grid</i></dt>
+									</dl>
+									<a style="font-size: 12px;" type="button" class="btn btn-link" href="archives/temas/TEMA08_UNIR.zip">Descargar Tema 8</a>
+								</td>
+							</tr>
+							<tr>
+								<b>TEMA 08</b>: Tecnologías Grid de la Información
+							</tr>
+						</table>
+					</div>
+				</div>
+				<div id="temas" class="col-sm-3" style="background-color: transparent;">
+					
+				</div>
+				<div id="temas" class="col-sm-3" style="background-color: #dbf1f9;">
+					<h5 style="color: #505050;" class="text-left bold"><strong>Test - TEMA 08</strong></h5>
+					<h6 style="color: #505050;" class="text-left bold"><b>Fecha de entrega</b>: 21 de febrero de 2021</h6>
+					<h6 style="color: #505050;" class="text-left bold"><b>Puntuación</b>: 0.1 puntos</h6>
+					<a style="font-size: 12px;" type="button" class="btn btn-link" href="archives/tests/TEST_TEMA08.zip">Descargar Test Tema 8</a>
+				</div>
+				<div id="temas" class="col-sm-2" style="background-color: transparent;">
+					<h5 style="color: #505050;" class="text-left bold"><strong></strong></h5>
+				</div>
+			</div>
+			<div id="inicialCentrado" class="col-sm-12 border-right-5" style="background-color: white;">
+				<h5 style="color: #505050;" class="text-left bold"></h5>
+			</div>
+		</div>
+		<br>
+
+<!--////////////////////////////////SEMANA 13////////////////////////////////////////-->
+
+		<div id="semana13" class="row">
+			<div id="inicialCentrado" class="col-sm-12" style="background-color: #d0e5ec;">
+				<h4 style="color: #40a2c6;" class="text-center bold"><strong>Semana 13 </strong></h4>
+				<h5 style="color: #40a2c6;" class="text-center bold"><strong>25 de enero de 2021 - 29 de enero de 2021 </strong></h5>
+			</div>
+		</div>
+		<div id="semanaContenido" class="row">
+			<div id="inicialCentrado" class="col-sm-12" style="background-color: white;">
+				<div id="inicialCentrado" class="col-sm-4" style="background-color: transparent;">
+					<h5 style="color: #40a2c6;" class="text-center bold"><strong>Temas</strong></h5>
+				</div>
+				<div id="inicialCentrado" class="col-sm-3" style="background-color: transparent;">
+					<h5 style="color: #40a2c6;" class="text-center bold"><strong>Actividades</strong></h5>
+				</div>
+				<div id="inicialCentrado" class="col-sm-3" style="background-color: transparent;">
+					<h5 style="color: #40a2c6;" class="text-center bold"><strong>Eventos</strong></h5>
+				</div>
+				<div id="inicialCentrado" class="col-sm-2" style="background-color: transparent;">
+					<h5 style="color: #40a2c6;" class="text-center bold"><strong>Laboratorios</strong></h5>
+				</div>
+			</div>
+			<br>
+		</div>
+		<div id="semana13Contenido" class="row">
+			<div id="inicialCentrado" class="col-sm-12 border-right-5" style="background-color: white;">
+				<div id="temas" class="col-md-4 border" style="background-color: #dbf1f9;">
+					<div class="container-fluid">
+						<br><table class="table">
+							<tr>
+								<td>
+									<dl class="dl-vertical">
+										<dt>9.1.-<i>¿Cómo estudiar este tema?</i></dt>
+										<dt>9.2.-<i>Introducción</i></dt>
+										<dt>9.3.-<i>SOA y servicios web</i></dt>
+									</dl>
+									<a style="font-size: 12px;" type="button" class="btn btn-link" href="archives/temas/TEMA09_UNIR.zip">Descargar Tema 9</a>
+								</td>
+							</tr>
+							<tr>
+								<b>TEMA 09</b>: Arquitectura orientada a servicios
+							</tr>
+						</table>
+					</div>
+				</div>
+				<div id="actividades" class="col-sm-3" style="background-color: transparent;">
+					
+				</div>
+				<div id="eventos" class="col-sm-3" style="background-color: transparent;">
+					
+				</div>
+				<div id="laboratorios" class="col-sm-2" style="background-color: #dbf1f9;">
+					<h5 style="color: #505050;" class="text-left bold"><strong>Laboratorio 2 - Creación de un servicio web sencillo</strong></h5>
+					<h6 style="color: #505050;" class="text-left bold"><b>Fecha de entrega</b>: 11 de febrero de 2021</h6>
+					<h6 style="color: #505050;" class="text-left bold"><b>Puntuación</b>: 3.0 puntos</h6>
+					<a style="font-size: 12px;" type="button" class="btn btn-link" href="archives/laboratorios/gii37t9lab2.zip">Descargar Laboratorio 2</a>
+				</div>
+			</div>
+			<div id="inicialCentrado" class="col-sm-12 border-right-5" style="background-color: white;">
+				<h5 style="color: #505050;" class="text-left bold"></h5>
+			</div>
+		</div>
+		<br>
+
+<!--////////////////////////////////FEBRERO////////////////////////////////////////-->
+
+		<div id="febrero" class="row">
+			<div id="inicialCentrado" class="col-sm-12" style="background-color: #6fc0de;">
+				<h4 style="color: white" class="text-center bold"><strong>FEBRERO</strong></h4>
+			</div>
+		</div>
+
+<!--////////////////////////////////SEMANA 14////////////////////////////////////////-->
+
+		<div id="semana14" class="row">
+			<div id="inicialCentrado" class="col-sm-12" style="background-color: #d0e5ec;">
+				<h4 style="color: #40a2c6;" class="text-center bold"><strong>Semana 14 </strong></h4>
+				<h5 style="color: #40a2c6;" class="text-center bold"><strong>1 de febrero de 2021 - 5 de febrero de 2021 </strong></h5>
+			</div>
+		</div>
+		<div id="semanaContenido" class="row">
+			<div id="inicialCentrado" class="col-sm-12" style="background-color: white;">
+				<div id="inicialCentrado" class="col-sm-4" style="background-color: transparent;">
+					<h5 style="color: #40a2c6;" class="text-center bold"><strong>Temas</strong></h5>
+				</div>
+				<div id="inicialCentrado" class="col-sm-3" style="background-color: transparent;">
+					<h5 style="color: #40a2c6;" class="text-center bold"><strong>Actividades</strong></h5>
+				</div>
+				<div id="inicialCentrado" class="col-sm-3" style="background-color: transparent;">
+					<h5 style="color: #40a2c6;" class="text-center bold"><strong>Eventos</strong></h5>
+				</div>
+				<div id="inicialCentrado" class="col-sm-2" style="background-color: transparent;">
+					<h5 style="color: #40a2c6;" class="text-center bold"><strong>Laboratorios</strong></h5>
+				</div>
+			</div>
+			<br>
+		</div>
+		<div id="semana14Contenido" class="row">
+			<div id="inicialCentrado" class="col-sm-12 border-right-5" style="background-color: white;">
+				<div id="temas" class="col-md-4 border" style="background-color: #dbf1f9;">
+					<div class="container-fluid">
+						<br><table class="table">
+							<tr>
+								<td>
+									<dl class="dl-vertical">
+										<dt>9.4.-<i>Topologías de un servicio web</i></dt>
+										<dt>9.5.-<i>Plataformas para los servicios web</i></dt>
+									</dl>
+									<a style="font-size: 12px;" type="button" class="btn btn-link" href="archives/temas/TEMA09_UNIR.zip">Descargar Tema 9</a>
+								</td>
+							</tr>
+							<tr>
+								<b>TEMA 09</b>: Arquitectura orientada a servicios (continuación)
+							</tr>
+						</table>
+					</div>
+				</div>
+				<div id="actividades" class="col-sm-3" style="background-color: transparent;">
+					
+				</div>
+				<div id="eventos" class="col-sm-3" style="background-color: #dbf1f9;">
+					<h5 style="color: #505050;" class="text-left bold"><strong>Test - TEMA 09</strong></h5>
+					<h6 style="color: #505050;" class="text-left bold"><b>Fecha de entrega</b>: 21 de febrero de 2021</h6>
+					<h6 style="color: #505050;" class="text-left bold"><b>Puntuación</b>: 0.1 puntos</h6>
+					<a style="font-size: 12px;" type="button" class="btn btn-link" href="archives/tests/TEST_TEMA09.zip">Descargar Test Tema 9</a>
+				</div>
+				<div id="laboratorios" class="col-sm-2" style="background-color: transparent;">
+					<h5 style="color: #505050;" class="text-left bold"><strong></strong></h5>
+				</div>
+			</div>
+			<div id="inicialCentrado" class="col-sm-12 border-right-5" style="background-color: white;">
+				<h5 style="color: #505050;" class="text-left bold"></h5>
+			</div>
+		</div>
+		<br>
+
+<!--////////////////////////////////SEMANA 15////////////////////////////////////////-->
+
+		<div id="semana15" class="row">
+			<div id="inicialCentrado" class="col-sm-12" style="background-color: #d0e5ec;">
+				<h4 style="color: #40a2c6;" class="text-center bold"><strong>Semana 15 </strong></h4>
+				<h5 style="color: #40a2c6;" class="text-center bold"><strong>8 de febrero de 2021 - 12 de febrero de 2021 </strong></h5>
+			</div>
+		</div>
+		<div id="semanaContenido" class="row">
+			<div id="inicialCentrado" class="col-sm-12" style="background-color: white;">
+				<div id="inicialCentrado" class="col-sm-4" style="background-color: transparent;">
+					<h5 style="color: #40a2c6;" class="text-center bold"><strong>Temas</strong></h5>
+				</div>
+				<div id="inicialCentrado" class="col-sm-3" style="background-color: transparent;">
+					<h5 style="color: #40a2c6;" class="text-center bold"><strong>Actividades</strong></h5>
+				</div>
+				<div id="inicialCentrado" class="col-sm-3" style="background-color: transparent;">
+					<h5 style="color: #40a2c6;" class="text-center bold"><strong>Eventos</strong></h5>
+				</div>
+				<div id="inicialCentrado" class="col-sm-2" style="background-color: transparent;">
+					<h5 style="color: #40a2c6;" class="text-center bold"><strong>Laboratorios</strong></h5>
+				</div>
+			</div>
+			<br>
+		</div>
+		<div id="semana15Contenido" class="row">
+			<div id="inicialCentrado" class="col-sm-12 border-right-5" style="background-color: white;">
+				<div id="temas" class="col-md-4 border" style="background-color: #dbf1f9;">
+					<div class="container-fluid">
+						<br><table class="table">
+							<tr>
+								<td>
+									<dl class="dl-vertical">
+										<dt>10.1.-<i>¿Cómo estudiar este tema?</i></dt>
+										<dt>10.2.-<i>Introducción</i></dt>
+										<dt>10.3.-<i>Mensajes</i></dt>
+										<dt>10.4.-<i>Sesiones persistentes</i></dt>
+										<dt>10.5.-<i>Sistema criptográfico</i></dt>
+										<dt>10.6.-<i>Funcionamiento del protocolo HTTPS</i></dt>
+									</dl>
+									<a style="font-size: 12px;" type="button" class="btn btn-link" href="archives/temas/TEMA10_UNIR.zip">Descargar Tema 10</a>
+								</td>
+							</tr>
+							<tr>
+								<b>TEMA 10</b>: Protocolo HTTP
+							</tr>
+						</table>
+					</div>
+				</div>
+				<div id="actividades" class="col-sm-3" style="background-color: transparent;">
+					
+				</div>
+				<div id="eventos" class="col-sm-3" style="background-color: #dbf1f9;">
+					<h5 style="color: #505050;" class="text-left bold"><strong>Test - TEMA 10</strong></h5>
+					<h6 style="color: #505050;" class="text-left bold"><b>Fecha de entrega</b>: 21 de febrero de 2021</h6>
+					<h6 style="color: #505050;" class="text-left bold"><b>Puntuación</b>: 0.1 puntos</h6>
+					<a style="font-size: 12px;" type="button" class="btn btn-link" href="archives/tests/TEST_TEMA10.zip">Descargar Test Tema 10</a>
+				</div>
+				<div id="laboratorios" class="col-sm-2" style="background-color: transparent;">
+					<h5 style="color: #505050;" class="text-left bold"><strong></strong></h5>
+				</div>
+			</div>
+			<div id="inicialCentrado" class="col-sm-12 border-right-5" style="background-color: white;">
+				<h5 style="color: #505050;" class="text-left bold"></h5>
+			</div>
+		</div>
+		<br>
+
+<!--////////////////////////////////SEMANA 16////////////////////////////////////////-->
+
+		<div id="semana16" class="row">
+			<div id="inicialCentrado" class="col-sm-12" style="background-color: #d0e5ec;">
+				<h4 style="color: #40a2c6;" class="text-center bold"><strong>Semana 16 </strong></h4>
+				<h5 style="color: #40a2c6;" class="text-center bold"><strong>15 de febrero de 2021 - 19 de febrero de 2021 </strong></h5>
+			</div>
+		</div>
+		
+		<div id="semana16Contenido" class="row">
+			<div id="inicialCentrado" class="col-sm-12 border-right-5" style="background-color: white;">
+				<br>
+				<div id="temas" class="col-md-12 border" style="background-color: white;">
+					<h5 style="color: #40a2c6;" class="text-center bold"><strong>SEMANA DE EXÁMENES</strong></h5>
+				</div>
+				
+			</div>
+			<div id="inicialCentrado" class="col-sm-12 border-right-5" style="background-color: white;">
+				<h5 style="color: #505050;" class="text-left bold"></h5>
+			</div>
+		</div>
+		<br>
+	</div>
+	<br>
+
+<!--////////////////////////////////BARRA BOTONES FINAL////////////////////////////////////////-->
+
+	<br>
+	<div id="barraInicialMenu" class="container-fluid">	
+		<div class="row">
+			<div id="inicialCentrado" class="col-sm-12" style="background-color: #d0e5ec;">
+				<br>
+				<div id="inicialCentrado" class="col-sm-2" style="background-color: transparent;"></div>
+				<div id="inicialCentrado" class="col-sm-8" style="background-color: transparent;">
+					<div id="subTabla00"class="col-sm-3" style="background-color:transparent;">
+						<center>
+							<center><a href="#barraInicialLogo" class="btn btn-info">Subir a inicio de página</a></center>
+						</center>
+					</div>
+					<div id="subTabla01"class="col-sm-3" style="background-color:transparent;">
+						<center>
+							<center><a href="index.html" class="btn btn-info">Menú Principal</a></center>
+						</center>
+					</div>
+					<div id="subTabla02"class="col-sm-3" style="background-color:transparent;">
+						<center>
+							<center><a href="bootstrap.html#bootstrap" class="btn btn-info">Acerca de <i>Bootstrap</i></a></center>
+						</center>
+					</div>
+					<div id="subTabla03"class="col-sm-3" style="background-color:#d0e5ec;">
+						<center>
+						<div class="dropdown">
+							<button class="btn btn-info btn-justified dropdown-toggle" type="button" id="dropdownmenu1" data-toggle="dropdown" aria-extended="true">
+								Entregables
+								<span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="dropdownmenu1">
+								<li role="presentation" class="dropdown-header">Archivos actividad</li>
+								<li class="divider"></li>
+								<li role="presentation"><a role="item" href="archives/memoria.pdf">Memoria PDF</a></li>
+								<li role="presentation"><a role="item" href="archives/proyecto.zip">Proyecto Web</a></li>
+								<li class="divider"></li>
+								<li role="presentation"><a role="item" href="https://github.com/gilvalencia/DAR_act03">Proyecto GitHub</a></li>
+							</ul>
+						</div></center>
+						<br>
+					</div>
+				</div>
+				<div id="inicialCentrado" class="col-sm-2" style="background-color: transparent;"></div>
+			</div>
+		</div>
+	</div>
+	<br>
+
+<!--////////////////////////////////CIERRE////////////////////////////////////////-->
+
+	<div id="barraInicialSubTexto" class="container-fluid">	
+		<div class="row">
+			<div id="inicialIzq"class="col-sm-3" style="background-color:transparent;"></div>
+			<div id="inicialCentrado" class="col-sm-6" style="background-color: transparent">
+				<center><img src="images/unir.png"></center>
+				<h6 style="color: #505050" class="text-center bold">Proyecto realizado para la ejecución de la ACTIVIDAD 04</h6>
+				<h6 style="color: #505050" class="text-center bold">de la Asignatura "Desarrollo de Aplicaciones en Red"</h6>
+				<h5 style="color: #505050" class="text-center bold">Curso 2020-2021</h5>
+			</div>
+			<div class="col-sm-3" style="background-color:transparent;"></div>
+		</div>
+	</div>
+</body>
+
+</html>
+
+
+
+
+
+
+				
